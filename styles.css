@@ -84,7 +84,7 @@ h2 {
 
 h3 { 
 	font-size:135%;
-	margin-bottom:1em;
+	margin: 5px;;
 }
 
 h4 { 
@@ -169,6 +169,15 @@ Removes the border on the first link...
 
 
 /***************** Section Specific Rules *****************/
+.skills-list {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.skills-list li {
+	margin: 8px 0;
+}
 
 #work {
 	background:#fff;
