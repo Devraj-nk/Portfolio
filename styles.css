@@ -57,13 +57,33 @@ is set to Arial. You could get two fonts that work well
 together and replace these choices. You may have to adjust
 sizing and spacing as well.
 ****************************************************/
-
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
 body {
-	font-family:Georgia;
-	color:#333;
-	background:#333;
+	margin: 0;
+	font-family:Arial, sans-serif;
+	position: relative;
+	/* color:#b5b5b5; */
+	background:#121212;
 }
+#background-animation {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+#background-animation img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+        }
+
 
 /************* typography ************/
 
@@ -108,8 +128,13 @@ a { color: #4574b5; }
 
 /****************** Grid ******************/
 
-.primary { background:#b5b5b5; }
-.secondary { background:#efefef; }
+.primary {
+    background: rgba(20,20,20,0.45);
+}
+
+.secondary {
+    background: rgba(255,255,255,0.35);
+}
 
 
 /****************** Header and Main Navigation ****************/
@@ -182,7 +207,7 @@ Removes the border on the first link...
 }
 
 #work {
-	background:#fff;
+	background: rgba(255,255,255,1);
 	padding: 20px;
 }
 
